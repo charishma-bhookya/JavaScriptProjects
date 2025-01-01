@@ -1,0 +1,87 @@
+/* General styles for body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff758c, #ff7eb3); /* Pink gradient */
+}
+
+/* Container to align items side by side */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Space between Welcome and Login sections */
+}
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background: #fff; /* White background for contrast */
+    color: #ff758c; /* Pink text */
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.welcome:hover {
+    background: #ffe4e9; /* Light pink hover effect */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Login Form */
+.loginform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+.loginform input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff7eb3; /* Pink border */
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+}
+
+.loginform input:focus {
+    border-color: #ff528c; /* Darker pink focus */
+    box-shadow: 0 0 5px rgba(255, 82, 140, 0.5); /* Glow effect */
+}
+
+/* Button */
+.loginform button {
+    padding: 10px 20px;
+    background: #ff7eb3; /* Pink button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.loginform button:hover {
+    background: #ff528c; /* Darker pink hover effect */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
