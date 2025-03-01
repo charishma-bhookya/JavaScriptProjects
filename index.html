@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>GitHub Profile Viewer</h2>
+    <input type="text" id="username" placeholder="Enter your Github URL">
+    <button onclick="fetchProfile()">Search</button>
+<p id="error" style="color: red;"></p>
+    <div id="profile">
+<img id="avatar" src="" alt="Avatar">
+<h3 id="name"></h3>
+<p id="bio"></p>
+<p>Followers: <span id="followers"></span></p>
+<a id="profilelink" href="#" target="_blank">View Profile</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
